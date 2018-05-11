@@ -14,12 +14,12 @@ app.get('/articleone', function (req, res) {
 
 });
 
-app.get('/article-two', function (req, res) {
-  res.send('Article Two');
+app.get('/articletwo', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'articletwo.html'));
 });
 
-app.get('/article-three', function (req, res) {
-  res.send('Article Three');
+app.get('/articlethree', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'articlethree.html'));
 });
 
 app.get('/ui/style.css', function (req, res) {
