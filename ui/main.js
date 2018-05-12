@@ -1,8 +1,6 @@
-        str = "vhbdhbv";
         function click()
         {
-            str = document.getElementById("hel").value;
-            
+            str = document.forms["myform"]["hel"].value;
         }
         document.write(str);
         
